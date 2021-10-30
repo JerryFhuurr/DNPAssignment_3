@@ -4,9 +4,9 @@ namespace AdultsApi.Models
 {
     public class User
     {
-        [JsonPropertyName("username")] public string UserName { get; set; }
-        [JsonPropertyName("role")] public string Role { get; set; }
-        [JsonPropertyName("securityleve;")] public int SecurityLevel { get; set; }
-        [JsonPropertyName("password")] public string Password { get; set; }
+        [JsonPropertyName("UserName")] public string UserName { get; set; }
+        [JsonPropertyName("Role")] public string Role { get; set; }
+        [JsonPropertyName("SecurityLevel")] public int SecurityLevel { get; set; }
+        [JsonPropertyName("Password")] public string Password { get; set; }
     }
 }

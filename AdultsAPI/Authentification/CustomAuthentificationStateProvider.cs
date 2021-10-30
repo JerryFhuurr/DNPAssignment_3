@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using System.Text.Json;
 using System.Threading.Tasks;
-using AdultsClient.Data;
+using AdultsAPI.Data;
+using AdultsApi.Models;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.JSInterop;
-using AdultsClient.Models;
 
-namespace AdultsClient.Authentification
+
+namespace AdultsApi.Authentification
 {
     public class CustomAuthenticationStateProvider : AuthenticationStateProvider
     {
@@ -44,7 +45,7 @@ namespace AdultsClient.Authentification
             return await Task.FromResult(new AuthenticationState(cachedClaimsPrincipal));
         }
 
-        public async Task ValidateLogin(string username, string password)
+        public void ValidateLogin(string username, string password)
         {
             Console.WriteLine("Validating log in");
             if (string.IsNullOrEmpty(username)) throw new Exception("Enter username");
@@ -53,7 +54,7 @@ namespace AdultsClient.Authentification
             ClaimsIdentity identity = new ClaimsIdentity();
             try
             {
-                User user = await userService.ValidateUser(username, password);
+                User user = userService.ValidateUser(username, password);
                 identity = SetupClaimsForUser(user);
                 string serialisedData = JsonSerializer.Serialize(user);
                 jsRuntime.InvokeVoidAsync("sessionStorage.setItem", "currentUser", serialisedData);

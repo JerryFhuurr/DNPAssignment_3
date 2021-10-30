@@ -1,7 +1,9 @@
-﻿namespace AdultsAPI.Data
+﻿using AdultsApi.Models;
+
+namespace AdultsAPI.Data
 {
     public interface IUserService
     {
-        //TODO IMplement login
+        User ValidateUser(string userName, string Password);
     }
 }

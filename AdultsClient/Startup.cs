@@ -34,7 +34,7 @@ namespace AdultsClient
             
             services.AddSingleton<IFamiliesService, CloudAdultService>();
             
-            services.AddScoped<IUserService, InMemoryUserService>();
+            services.AddScoped<IUserService, UserWebService>();
             services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
             
             services.AddAuthorization(options =>

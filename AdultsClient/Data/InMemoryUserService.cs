@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using AdultsClient.Models;
 
 namespace AdultsClient.Data
 {
-    public class InMemoryUserService : IUserService
+    /*public class InMemoryUserService : IUserService
     {
         private List<User> users;
 
@@ -31,7 +32,7 @@ namespace AdultsClient.Data
             }.ToList();
         }
 
-        public User ValidateUser(string userName, string password) {
+        public async Task<User> ValidateUser(string userName, string password) {
             User first = users.FirstOrDefault(user => user.UserName.Equals(userName));
             if (first == null) {
                 throw new Exception("User not found");
@@ -43,5 +44,5 @@ namespace AdultsClient.Data
 
             return first;
         } 
-    }
+    }*/
 }

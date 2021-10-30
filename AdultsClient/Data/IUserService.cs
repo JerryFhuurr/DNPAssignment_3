@@ -1,9 +1,10 @@
-﻿using AdultsClient.Models;
+﻿using System.Threading.Tasks;
+using AdultsClient.Models;
 
 namespace AdultsClient.Data
 {
     public interface IUserService
     {
-        User ValidateUser(string userName, string Password);
+        Task<User> ValidateUser(string userName, string password);
     }
 }
