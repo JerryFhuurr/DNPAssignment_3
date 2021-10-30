@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "Fay01trCQDPNnXG8ql8GxS02VKPgqxnGD9Hma79niPtSJkUYhsl21mTpqQwcDElibZDImoG8owSSZJchkqIdwg==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\janad\\OneDrive\\Adam\\Dokumenty\\VIA\\3rd semester\\DNP1x\\intro\\DNP1Assignment2\\DNPAssignment2\\AdultsAPI.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Swashbuckle.AspNetCore (>= 5.6.3)' for 'net5.0'.",
+      "libraryId": "Swashbuckle.AspNetCore",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}

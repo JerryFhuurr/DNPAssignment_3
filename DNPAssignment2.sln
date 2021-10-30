@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdultsAPI", "AdultsAPI", "{E697ECEA-63A0-4B78-80B7-4117EDA78D55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdultsClient", "AdultsClient", "{22FE42BC-6E84-43C5-9420-210B9E26E9E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdultsAPI", "AdultsAPI\AdultsAPI.csproj", "{15F5970E-1527-4EC6-950B-CD6C11569BCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdultsClient", "AdultsClient\AdultsClient.csproj", "{2A2E22B8-C4E1-47EE-BF7A-1B59FA61808E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15F5970E-1527-4EC6-950B-CD6C11569BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15F5970E-1527-4EC6-950B-CD6C11569BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15F5970E-1527-4EC6-950B-CD6C11569BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15F5970E-1527-4EC6-950B-CD6C11569BCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A2E22B8-C4E1-47EE-BF7A-1B59FA61808E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A2E22B8-C4E1-47EE-BF7A-1B59FA61808E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A2E22B8-C4E1-47EE-BF7A-1B59FA61808E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A2E22B8-C4E1-47EE-BF7A-1B59FA61808E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{15F5970E-1527-4EC6-950B-CD6C11569BCB} = {E697ECEA-63A0-4B78-80B7-4117EDA78D55}
+		{2A2E22B8-C4E1-47EE-BF7A-1B59FA61808E} = {22FE42BC-6E84-43C5-9420-210B9E26E9E6}
+	EndGlobalSection
+EndGlobal

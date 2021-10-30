@@ -1,0 +1,118 @@
+﻿@page "/Edit/{Id:int}"
+@attribute [Authorize(Policy = "SecurityLevel2")]
+
+@using AdultsClient.Models
+@using AdultsClient.Data
+@using Microsoft.AspNetCore.Components
+
+@inject IFamiliesService familiesService
+@inject NavigationManager NavigationManager
+
+<h3>Edit adult with id: @Id</h3>
+
+
+@if (adultToEdit == null)
+{
+    <em>Adult not found!</em>
+}
+else
+{
+    <EditForm Model="@adultToEdit" OnValidSubmit="@Save">
+
+        <div class="form-row">
+            @*<div class="form-group col-md-1">
+            <label for="Id" class="form-check-label">Adult Id </label>
+            <InputNumber id="Id" class="form-control" placeholder="Number" @bind-Value="newAdult.Id"/>
+        </div>*@
+            <div class="form-group col-md-6">
+                <label for="firstName" class="form-check-label">First name </label>
+                <InputText id="firstName" class="form-control" placeholder="George" @bind-Value="adultToEdit.FirstName"/>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lastName" class="form-check-label">Last name </label>
+                <InputText id="lastName" class="form-control" placeholder="Black" @bind-Value="adultToEdit.LastName"/>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="job" class="form-check-label">Job Title </label>
+                <InputText id="job" class="form-control" placeholder="Student intern" @bind-Value="jobToEdit.JobTitle"/>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="salary" class="form-check-label">Salary </label>
+                <InputNumber id="salary" class="form-control" placeholder="Per Year" @bind-Value="jobToEdit.Salary"/>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="hairColour" class="form-check-label">Hair colour </label>
+                <InputText id="hairColour" class="form-control" placeholder="Black" @bind-Value="adultToEdit.HairColor"/>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="eyeColour" class="form-check-label">Eye colour </label>
+                <InputText id="eyeColour" class="form-control" placeholder="Blue" @bind-Value="adultToEdit.EyeColor"/>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="age" class="form-check-label">Age </label>
+                <InputNumber id="age" class="form-control" placeholder="years" @bind-Value="adultToEdit.Age"/>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="weight" class="form-check-label">Weight </label>
+                <InputNumber id="weight" class="form-control" placeholder="kg" @bind-Value="adultToEdit.Weight"/>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="height" class="form-check-label">Height </label>
+                <InputNumber id="height" class="form-control" placeholder="cm" @bind-Value="adultToEdit.Height"/>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="sex" class="form-check-label">Sex </label>
+                <InputText id="sex" class="form-control" placeholder="whatever you want" @bind-Value="adultToEdit.Sex"/>
+                @*<InputSelect type="InputText" id="sex" class="form-control" placeholder="X" @bind-Value="adultToEdit.Sex">
+                            <option>M</option>
+                            <option>F</option>
+                        </InputSelect>*@
+            </div>
+        </div>
+
+        <DataAnnotationsValidator/> <ValidationSummary/>
+        <div class="form-group col-md-6">
+            <p class="actions">
+                <button class="btn btn-outline-dark" type="submit">Edit</button>
+            </p>
+            <p class="actions">
+                <button class="btn btn-outline-dark" @onclick="Back">Back</button>
+            </p>
+        </div>
+
+    </EditForm>
+}
+
+@code {
+
+    [Parameter]
+    public int Id { get; set; }
+
+    private Adult adultToEdit;
+    private Job jobToEdit;
+
+    protected override async Task OnInitializedAsync()
+    {
+        adultToEdit = await familiesService.GetAsync(Id);
+        jobToEdit = adultToEdit.JobTitle;
+    }
+
+    private void Save()
+    {
+        adultToEdit.JobTitle = jobToEdit;
+        familiesService.UpdateAsync(adultToEdit);
+        NavigationManager.NavigateTo("/Adults");
+    }
+
+    private void Back()
+    {
+        NavigationManager.NavigateTo("/Adults");
+    }
+
+}
