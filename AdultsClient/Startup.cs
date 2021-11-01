@@ -33,8 +33,8 @@ namespace AdultsClient
             services.AddServerSideBlazor();
             
             services.AddSingleton<IFamiliesService, CloudAdultService>();
-            
             services.AddScoped<IUserService, UserWebService>();
+            
             services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
             
             services.AddAuthorization(options =>
