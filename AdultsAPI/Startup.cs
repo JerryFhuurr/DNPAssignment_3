@@ -28,6 +28,7 @@ namespace AdultsAPI
         {
             services.AddControllers();
             services.AddScoped<IAdultsService, AdultService>();
+            services.AddScoped<IUserService, InMemoryUserService>();
 
             /*services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "AdultsAPI", Version = "v1"}); });*/
         }

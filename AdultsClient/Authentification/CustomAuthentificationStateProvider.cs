@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Authentication;
 using System.Security.Claims;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -61,7 +62,7 @@ namespace AdultsClient.Authentification
             }
             catch (Exception e)
             {
-                throw;
+                throw new AuthenticationException(e.Message);
             }
 
             NotifyAuthenticationStateChanged(

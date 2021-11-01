@@ -104,19 +104,32 @@ using AdultsClient.Authentification;
     private string password;
     private string errorMessage;
 
+    protected override async Task OnInitializedAsync()
+    {
+        username = "";
+        password = "";
+        errorMessage = "";
+    }
+
     public async Task PerformLogin()
     {
         errorMessage = "";
         try
         {
-            ((CustomAuthenticationStateProvider) AuthenticationStateProvider).ValidateLogin(username, password);
-            username = "";
+            await ((CustomAuthenticationStateProvider) AuthenticationStateProvider).ValidateLogin(username, password);
             password = "";
         }
         catch (Exception e)
         {
-            errorMessage = e.Message;
-            NavigationManager.NavigateTo("/Login");
+            if (e.Message == "Internal Server Error")
+            {
+                errorMessage = "This user and password combination is wrong";
+            }
+            else
+            {
+                errorMessage = e.Message;    
+            }
+            Console.WriteLine(e.Message);
         }
     }
 
@@ -128,7 +141,8 @@ using AdultsClient.Authentification;
         try
         {
             ((CustomAuthenticationStateProvider) AuthenticationStateProvider).Logout();
-            NavigationManager.NavigateTo("/");
+            // NavigationManager.NavigateTo("/");
+            NavigationManager.NavigateTo("/Login");
         }
         catch (Exception e)
         {

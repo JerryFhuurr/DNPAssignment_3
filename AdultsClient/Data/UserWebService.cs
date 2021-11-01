@@ -25,6 +25,9 @@ namespace AdultsClient.Data
             User user = new User();
             user.UserName = userName;
             user.Password = password;
+            user.SecurityLevel = 1;
+            user.Role = "notNull";
+            
             string userAsJson = JsonSerializer.Serialize(user);
             HttpContent content = new StringContent(userAsJson,
                 Encoding.UTF8,
@@ -33,7 +36,9 @@ namespace AdultsClient.Data
 
             if (!response.IsSuccessStatusCode)
             {
-                throw new Exception($"Error, {response.StatusCode}, {response.ReasonPhrase}");
+                Console.WriteLine(response.ReasonPhrase);
+                Console.WriteLine(response.ToString());
+                throw new AuthenticationException($"{response.ReasonPhrase}");
             }
             
             string message = await response.Content.ReadAsStringAsync();

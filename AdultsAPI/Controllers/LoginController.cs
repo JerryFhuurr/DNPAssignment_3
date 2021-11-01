@@ -1,10 +1,8 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
-using AdultsApi.Authentification;
 using AdultsAPI.Data;
 using AdultsApi.Models;
-using Microsoft.AspNetCore.Components.Authorization;
+
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -14,7 +12,12 @@ namespace AdultsAPI.Controllers
     [Route("[controller]")]
     public class LoginController : ControllerBase
     {
-        private IUserService UserService;
+        private IUserService userService;
+
+        public LoginController(IUserService userService)
+        {
+            this.userService = userService;
+        }
         
         [Route("/Login/UserLogin")]  
         [HttpPost]
@@ -27,12 +30,14 @@ namespace AdultsAPI.Controllers
 
             try
             {
-                var validatedUser = UserService.ValidateUser(user.UserName, user.Password);
+                var validatedUser = await userService.ValidateUser(user.UserName, user.Password);
+                
                 return Ok(validatedUser);
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
+                Console.WriteLine(e.Message);
                 return StatusCode(500, e.Message);
             }
         }  
