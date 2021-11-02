@@ -67,8 +67,8 @@ namespace AdultsClient.Data
 
         public async Task UpdateAsync(Adult adult)
         {
-            string todoAsJson = JsonSerializer.Serialize(adult);
-            HttpContent content = new StringContent(todoAsJson,
+            string adultAsJson = JsonSerializer.Serialize(adult);
+            HttpContent content = new StringContent(adultAsJson,
                 Encoding.UTF8,
                 "application/json");
             HttpResponseMessage response = await client.PatchAsync($"{uri}/adults/{adult.Id}", content);
