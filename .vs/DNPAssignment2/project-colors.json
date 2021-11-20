@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "15f5970e-1527-4ec6-950b-cd6c11569bcb": {
+      "ProjectGuid": "15f5970e-1527-4ec6-950b-cd6c11569bcb",
+      "DisplayName": "AdultsAPI",
+      "ColorIndex": 0
+    },
+    "2a2e22b8-c4e1-47ee-bf7a-1b59fa61808e": {
+      "ProjectGuid": "2a2e22b8-c4e1-47ee-bf7a-1b59fa61808e",
+      "DisplayName": "AdultsClient",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

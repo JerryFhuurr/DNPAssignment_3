@@ -1,12 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31825.309
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdultsAPI", "AdultsAPI", "{E697ECEA-63A0-4B78-80B7-4117EDA78D55}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdultsClient", "AdultsClient", "{22FE42BC-6E84-43C5-9420-210B9E26E9E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdultsAPI", "AdultsAPI\AdultsAPI.csproj", "{15F5970E-1527-4EC6-950B-CD6C11569BCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdultsAPI", "AdultsAPI\AdultsAPI.csproj", "{15F5970E-1527-4EC6-950B-CD6C11569BCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdultsClient", "AdultsClient\AdultsClient.csproj", "{2A2E22B8-C4E1-47EE-BF7A-1B59FA61808E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdultsClient", "AdultsClient\AdultsClient.csproj", "{2A2E22B8-C4E1-47EE-BF7A-1B59FA61808E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FamilyServer", "..\FamilyDB\FamilyServer\FamilyServer.csproj", "{836C3F4E-0A80-465B-9854-33D21A08213D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,9 +27,19 @@ Global
 		{2A2E22B8-C4E1-47EE-BF7A-1B59FA61808E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A2E22B8-C4E1-47EE-BF7A-1B59FA61808E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A2E22B8-C4E1-47EE-BF7A-1B59FA61808E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{836C3F4E-0A80-465B-9854-33D21A08213D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{836C3F4E-0A80-465B-9854-33D21A08213D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{836C3F4E-0A80-465B-9854-33D21A08213D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{836C3F4E-0A80-465B-9854-33D21A08213D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{15F5970E-1527-4EC6-950B-CD6C11569BCB} = {E697ECEA-63A0-4B78-80B7-4117EDA78D55}
 		{2A2E22B8-C4E1-47EE-BF7A-1B59FA61808E} = {22FE42BC-6E84-43C5-9420-210B9E26E9E6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {344CD0A6-5E5C-4BBE-8D2E-7758399F2588}
 	EndGlobalSection
 EndGlobal

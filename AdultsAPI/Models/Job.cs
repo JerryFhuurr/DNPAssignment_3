@@ -8,7 +8,7 @@ namespace AdultsApi.Models
 {
     public class Job
     {
-        [Required(ErrorMessage = "Please enter job position.")]
+        [Required(ErrorMessage = "Please enter job position."), Key]
         [JsonPropertyName("JobTitle")]
         public string JobTitle { get; set; }
 

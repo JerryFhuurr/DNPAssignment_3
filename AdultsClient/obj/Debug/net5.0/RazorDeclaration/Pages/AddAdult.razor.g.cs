@@ -12,98 +12,98 @@ namespace AdultsClient.Pages
     using System.Linq;
     using System.Threading.Tasks;
 #nullable restore
-#line 1 "C:\Users\janad\OneDrive\Adam\Dokumenty\VIA\3rd semester\DNP1x\intro\DNP1Assignment2\DNPAssignment2\AdultsClient\_Imports.razor"
+#line 1 "C:\Users\fhuur\OneDrive\DNPSolutions\DNPAssignment2\AdultsClient\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\janad\OneDrive\Adam\Dokumenty\VIA\3rd semester\DNP1x\intro\DNP1Assignment2\DNPAssignment2\AdultsClient\_Imports.razor"
+#line 2 "C:\Users\fhuur\OneDrive\DNPSolutions\DNPAssignment2\AdultsClient\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\janad\OneDrive\Adam\Dokumenty\VIA\3rd semester\DNP1x\intro\DNP1Assignment2\DNPAssignment2\AdultsClient\_Imports.razor"
+#line 3 "C:\Users\fhuur\OneDrive\DNPSolutions\DNPAssignment2\AdultsClient\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\janad\OneDrive\Adam\Dokumenty\VIA\3rd semester\DNP1x\intro\DNP1Assignment2\DNPAssignment2\AdultsClient\_Imports.razor"
+#line 4 "C:\Users\fhuur\OneDrive\DNPSolutions\DNPAssignment2\AdultsClient\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\janad\OneDrive\Adam\Dokumenty\VIA\3rd semester\DNP1x\intro\DNP1Assignment2\DNPAssignment2\AdultsClient\_Imports.razor"
+#line 5 "C:\Users\fhuur\OneDrive\DNPSolutions\DNPAssignment2\AdultsClient\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\janad\OneDrive\Adam\Dokumenty\VIA\3rd semester\DNP1x\intro\DNP1Assignment2\DNPAssignment2\AdultsClient\_Imports.razor"
+#line 6 "C:\Users\fhuur\OneDrive\DNPSolutions\DNPAssignment2\AdultsClient\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\janad\OneDrive\Adam\Dokumenty\VIA\3rd semester\DNP1x\intro\DNP1Assignment2\DNPAssignment2\AdultsClient\_Imports.razor"
+#line 7 "C:\Users\fhuur\OneDrive\DNPSolutions\DNPAssignment2\AdultsClient\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\janad\OneDrive\Adam\Dokumenty\VIA\3rd semester\DNP1x\intro\DNP1Assignment2\DNPAssignment2\AdultsClient\_Imports.razor"
+#line 8 "C:\Users\fhuur\OneDrive\DNPSolutions\DNPAssignment2\AdultsClient\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\janad\OneDrive\Adam\Dokumenty\VIA\3rd semester\DNP1x\intro\DNP1Assignment2\DNPAssignment2\AdultsClient\_Imports.razor"
+#line 9 "C:\Users\fhuur\OneDrive\DNPSolutions\DNPAssignment2\AdultsClient\_Imports.razor"
 using AdultsClient;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\janad\OneDrive\Adam\Dokumenty\VIA\3rd semester\DNP1x\intro\DNP1Assignment2\DNPAssignment2\AdultsClient\_Imports.razor"
+#line 10 "C:\Users\fhuur\OneDrive\DNPSolutions\DNPAssignment2\AdultsClient\_Imports.razor"
 using AdultsClient.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\janad\OneDrive\Adam\Dokumenty\VIA\3rd semester\DNP1x\intro\DNP1Assignment2\DNPAssignment2\AdultsClient\Pages\AddAdult.razor"
+#line 4 "C:\Users\fhuur\OneDrive\DNPSolutions\DNPAssignment2\AdultsClient\Pages\AddAdult.razor"
 using AdultsClient.Data;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\janad\OneDrive\Adam\Dokumenty\VIA\3rd semester\DNP1x\intro\DNP1Assignment2\DNPAssignment2\AdultsClient\Pages\AddAdult.razor"
+#line 5 "C:\Users\fhuur\OneDrive\DNPSolutions\DNPAssignment2\AdultsClient\Pages\AddAdult.razor"
 using AdultsClient.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\janad\OneDrive\Adam\Dokumenty\VIA\3rd semester\DNP1x\intro\DNP1Assignment2\DNPAssignment2\AdultsClient\Pages\AddAdult.razor"
+#line 6 "C:\Users\fhuur\OneDrive\DNPSolutions\DNPAssignment2\AdultsClient\Pages\AddAdult.razor"
 using Microsoft.AspNetCore.Components;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\janad\OneDrive\Adam\Dokumenty\VIA\3rd semester\DNP1x\intro\DNP1Assignment2\DNPAssignment2\AdultsClient\Pages\AddAdult.razor"
+#line 2 "C:\Users\fhuur\OneDrive\DNPSolutions\DNPAssignment2\AdultsClient\Pages\AddAdult.razor"
            [Authorize(Policy = "SecurityLevel1")]
 
 #line default
@@ -118,7 +118,7 @@ using Microsoft.AspNetCore.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 81 "C:\Users\janad\OneDrive\Adam\Dokumenty\VIA\3rd semester\DNP1x\intro\DNP1Assignment2\DNPAssignment2\AdultsClient\Pages\AddAdult.razor"
+#line 81 "C:\Users\fhuur\OneDrive\DNPSolutions\DNPAssignment2\AdultsClient\Pages\AddAdult.razor"
        
     private Adult newAdult = new Adult();
     private Job newJob = new Job();

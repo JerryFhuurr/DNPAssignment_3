@@ -1,18 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "Fay01trCQDPNnXG8ql8GxS02VKPgqxnGD9Hma79niPtSJkUYhsl21mTpqQwcDElibZDImoG8owSSZJchkqIdwg==",
-  "success": false,
-  "projectFilePath": "C:\\Users\\janad\\OneDrive\\Adam\\Dokumenty\\VIA\\3rd semester\\DNP1x\\intro\\DNP1Assignment2\\DNPAssignment2\\AdultsAPI.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'Swashbuckle.AspNetCore (>= 5.6.3)' for 'net5.0'.",
-      "libraryId": "Swashbuckle.AspNetCore",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "dgSpecHash": "IyV5U+iqt2hTFTgH8727FkEFmgQR/rvjT4aIuvcuhZcHhKRZBaQAJQxuGYjoxFx6DuF02EnboPgcz9eneaKD4g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fhuur\\OneDrive\\DNPSolutions\\DNPAssignment2\\AdultsAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fhuur\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\fhuur\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\fhuur\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\fhuur\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\fhuur\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\fhuur\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
 }

@@ -63,8 +63,8 @@ namespace AdultsAPI.Data
             
             toUpdate.FirstName = adult.FirstName;
             toUpdate.LastName = adult.LastName;
-            toUpdate.JobTitle.JobTitle = adult.JobTitle.JobTitle;
-            toUpdate.JobTitle.Salary = adult.JobTitle.Salary;
+            toUpdate.JobTitle = adult.JobTitle;
+            toUpdate.Job.Salary = adult.Job.Salary;
             toUpdate.HairColor = adult.HairColor;
             toUpdate.EyeColor = adult.EyeColor;
             toUpdate.Age = adult.Age;

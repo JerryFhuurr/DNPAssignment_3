@@ -1,24 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\janad\\OneDrive\\Adam\\Dokumenty\\VIA\\3rd semester\\DNP1x\\intro\\DNP1Assignment2\\DNPAssignment2\\AdultsAPI.csproj": {}
+    "C:\\Users\\fhuur\\OneDrive\\DNPSolutions\\DNPAssignment2\\AdultsAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\janad\\OneDrive\\Adam\\Dokumenty\\VIA\\3rd semester\\DNP1x\\intro\\DNP1Assignment2\\DNPAssignment2\\AdultsAPI.csproj": {
+    "C:\\Users\\fhuur\\OneDrive\\DNPSolutions\\DNPAssignment2\\AdultsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\janad\\OneDrive\\Adam\\Dokumenty\\VIA\\3rd semester\\DNP1x\\intro\\DNP1Assignment2\\DNPAssignment2\\AdultsAPI.csproj",
+        "projectUniqueName": "C:\\Users\\fhuur\\OneDrive\\DNPSolutions\\DNPAssignment2\\AdultsAPI.csproj",
         "projectName": "AdultsAPI",
-        "projectPath": "C:\\Users\\janad\\OneDrive\\Adam\\Dokumenty\\VIA\\3rd semester\\DNP1x\\intro\\DNP1Assignment2\\DNPAssignment2\\AdultsAPI.csproj",
-        "packagesPath": "C:\\Users\\janad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\janad\\OneDrive\\Adam\\Dokumenty\\VIA\\3rd semester\\DNP1x\\intro\\DNP1Assignment2\\DNPAssignment2\\obj\\",
+        "projectPath": "C:\\Users\\fhuur\\OneDrive\\DNPSolutions\\DNPAssignment2\\AdultsAPI.csproj",
+        "packagesPath": "C:\\Users\\fhuur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fhuur\\OneDrive\\DNPSolutions\\DNPAssignment2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\janad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\fhuur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
@@ -58,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
         }
       }
     }
