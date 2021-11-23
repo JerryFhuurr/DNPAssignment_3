@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdultsAPI", "AdultsAPI\Adul
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdultsClient", "AdultsClient\AdultsClient.csproj", "{2A2E22B8-C4E1-47EE-BF7A-1B59FA61808E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FamilyServer", "..\FamilyDB\FamilyServer\FamilyServer.csproj", "{836C3F4E-0A80-465B-9854-33D21A08213D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,10 +25,6 @@ Global
 		{2A2E22B8-C4E1-47EE-BF7A-1B59FA61808E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A2E22B8-C4E1-47EE-BF7A-1B59FA61808E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A2E22B8-C4E1-47EE-BF7A-1B59FA61808E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{836C3F4E-0A80-465B-9854-33D21A08213D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{836C3F4E-0A80-465B-9854-33D21A08213D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{836C3F4E-0A80-465B-9854-33D21A08213D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{836C3F4E-0A80-465B-9854-33D21A08213D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -35,13 +35,7 @@ else
             <td>First name</td>
             <td>Last name</td>
             <td>Job title</td>
-            @*<td>Salary</td>
-        <td>Hair color</td>
-        <td>Eye color</td>*@
             <td>Age</td>
-            @*<td>Weight</td>
-        <td>Height</td>
-        <td>Sex</td>*@
         </tr>
         </thead>
         <tbody>
@@ -51,14 +45,8 @@ else
                 <td>@item.Id</td>
                 <td>@item.FirstName</td>
                 <td>@item.LastName</td>
-                <td>@item.JobTitle.JobTitle</td>
-                @*<td>@item.JobTitle.Salary</td>
-            <td>@item.HairColor</td>
-            <td>@item.EyeColor</td>*@
+                <td>@item.Job.JobTitle</td>
                 <td>@item.Age</td>
-                @*<td>@item.Weight</td>
-            <td>@item.Height</td>
-            <td>@item.Sex</td>*@
                 <AuthorizeView Policy="SecurityLevel2" >
                     <td>
                         <button @onclick="@(() => RemoveAdult(item.Id))">
@@ -91,9 +79,6 @@ else
         Task<IList<Adult>> getAdultsTask = familiesService.GetAdultsAsync();
         adults = await getAdultsTask;
         adultsToShow = adults;
-
-    // adults = FamiliesData.GetAdults();
-    // adults = await FamiliesData.GetAdultsAsync();
     }
 
     private void FilterByName(ChangeEventArgs changeEventArgs)

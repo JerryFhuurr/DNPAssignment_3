@@ -11,7 +11,7 @@ namespace AdultsClient.Data
 {
     public class UserWebService : IUserService
     {
-        private string uri = "https://localhost:5003";
+        private string uri = "https://localhost:44380";
         
         // private string uri = "http://jsonplaceholder.typicode.com";
         private readonly HttpClient client;

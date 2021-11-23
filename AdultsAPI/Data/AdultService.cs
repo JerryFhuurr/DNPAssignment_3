@@ -63,7 +63,7 @@ namespace AdultsAPI.Data
             
             toUpdate.FirstName = adult.FirstName;
             toUpdate.LastName = adult.LastName;
-            toUpdate.JobTitle = adult.JobTitle;
+            toUpdate.Job.JobTitle = adult.Job.JobTitle;
             toUpdate.Job.Salary = adult.Job.Salary;
             toUpdate.HairColor = adult.HairColor;
             toUpdate.EyeColor = adult.EyeColor;
@@ -91,6 +91,10 @@ namespace AdultsAPI.Data
 
             File.WriteAllText(adultFile, productsAsJson);
         }
-        
+
+        public Task<Job> GetJob(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

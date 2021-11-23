@@ -6,7 +6,6 @@ namespace AdultsApi.Models
 {
     public class Adult : Person
     {
-        [JsonPropertyName("JobTitle")] [ForeignKey("Job")] public string JobTitle { get; set; }
-        public Job Job { get; set; }
+        [JsonPropertyName("JobTitle")]  public Job Job { get; set; }
     }
 }

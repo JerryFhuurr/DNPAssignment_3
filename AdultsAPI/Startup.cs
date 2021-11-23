@@ -29,8 +29,9 @@ namespace AdultsAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-           
-            services.AddScoped<IAdultsService, AdultService>();
+
+            services.AddDbContext<FamilyDbContext>();
+            services.AddScoped<IAdultsService, SqliteAdultServices>();
             services.AddScoped<IUserService, InMemoryUserService>();
 
             /*services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "AdultsAPI", Version = "v1"}); });*/

@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AdultsAPI.Migrations
 {
     [DbContext(typeof(FamilyDbContext))]
-    [Migration("20211119144831_Adults")]
+    [Migration("20211123160835_Adults")]
     partial class Adults
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

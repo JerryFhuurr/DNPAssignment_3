@@ -34,7 +34,7 @@
             <InputText id="job" class="form-control" placeholder="Student intern" @bind-Value="newJob.JobTitle"/>
         </div>
         <div class="form-group col-md-6">
-            <label for="salary" class="form-check-label">Salary </label>
+            <label for="salary" class="form-check-label">Salary(DKK) </label>
             <InputNumber id="salary" class="form-control" placeholder="42069000" @bind-Value="newJob.Salary"/>
         </div>
     </div>
@@ -54,11 +54,11 @@
     </div>
     <div class="form-row">
         <div class="form-group col-md-4">
-            <label for="weight" class="form-check-label">Weight </label>
+            <label for="weight" class="form-check-label">Weight (Kg) </label>
             <InputNumber id="weight" class="form-control" placeholder="59" @bind-Value="newAdult.Weight"/>
         </div>
         <div class="form-group col-md-4">
-            <label for="height" class="form-check-label">Height </label>
+            <label for="height" class="form-check-label">Height (cm) </label>
             <InputNumber id="height" class="form-control" placeholder="180" @bind-Value="newAdult.Height"/>
         </div>
         <div class="form-group col-md-4">
@@ -84,7 +84,7 @@
 
     private void AddNewAdult()
     {
-        newAdult.JobTitle = newJob;
+        newAdult.Job = newJob;
         familiesService.AddAdultAsync(newAdult);
         NavigationManager.NavigateTo("/Adults");
     }

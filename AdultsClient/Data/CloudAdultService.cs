@@ -12,7 +12,7 @@ namespace AdultsClient.Data
 {
     public class CloudAdultService : IFamiliesService
     {
-        private string uri = "https://localhost:5003";
+        private string uri = "https://localhost:44380";
         
         // private string uri = "http://jsonplaceholder.typicode.com";
         private readonly HttpClient client;
@@ -85,8 +85,8 @@ namespace AdultsClient.Data
             
                 toUpdate.FirstName = adult.FirstName;
                 toUpdate.LastName = adult.LastName;
-                toUpdate.JobTitle.JobTitle = adult.JobTitle.JobTitle;
-                toUpdate.JobTitle.Salary = adult.JobTitle.Salary;
+                toUpdate.Job.JobTitle = adult.Job.JobTitle;
+                toUpdate.Job.Salary = adult.Job.Salary;
                 toUpdate.HairColor = adult.HairColor;
                 toUpdate.EyeColor = adult.EyeColor;
                 toUpdate.Age = adult.Age;

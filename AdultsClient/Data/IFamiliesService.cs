@@ -11,10 +11,5 @@ namespace AdultsClient.Data
         Task AddAdultAsync(Adult adult);
         Task   RemoveAdultAsync(int adultId);
         Task   UpdateAsync(Adult adult);
-        
-        /*void AddAdult(Adult adult);
-        void RemoveAdult(int todoId);
-        void Update(Adult todo);
-        Adult Get(int id);*/
     }
 }

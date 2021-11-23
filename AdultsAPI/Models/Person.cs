@@ -6,7 +6,7 @@ namespace AdultsApi.Models
 {
     public class Person
     {
-        [Required, Range(0, int.MaxValue)]
+        [Required, Range(0, int.MaxValue), Key]
         [JsonPropertyName("Id")]
         public int Id { get; set; }
 

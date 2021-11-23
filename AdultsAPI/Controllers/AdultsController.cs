@@ -14,7 +14,7 @@ namespace AdultsAPI.Controllers
         private IAdultsService adultsService;
 
         public AdultsController(IAdultsService adultsService)
-        { 
+        {
             this.adultsService = adultsService;
         }
 
@@ -34,7 +34,7 @@ namespace AdultsAPI.Controllers
                 return StatusCode(500, e.Message);
             }
         }
-        
+
         [HttpDelete]
         [Route("{id:int}")]
         public async Task<ActionResult> DeleteAdult([FromRoute] int id)
