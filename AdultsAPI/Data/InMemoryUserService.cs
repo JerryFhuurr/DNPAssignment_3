@@ -6,7 +6,7 @@ using AdultsApi.Models;
 
 namespace AdultsAPI.Data
 {
-    public class InMemoryUserService: IUserService
+    public class InMemoryUserService : IUserService
     {
         private List<User> users;
 
@@ -16,7 +16,7 @@ namespace AdultsAPI.Data
             {
                 new User
                 {
-                    
+
                     Password = "123456",
                     Role = "Admin",
                     SecurityLevel = 2,
@@ -32,17 +32,20 @@ namespace AdultsAPI.Data
             }.ToList();
         }
 
-        public async Task<User> ValidateUser(string userName, string password) {
+        public async Task<User> ValidateUser(string userName, string password)
+        {
             User first = users.FirstOrDefault(user => user.UserName.Equals(userName));
-            if (first == null) {
+            if (first == null)
+            {
                 throw new Exception("User not found");
             }
 
-            if (!first.Password.Equals(password)) {
+            if (!first.Password.Equals(password))
+            {
                 throw new Exception("Incorrect password");
             }
 
             return first;
-        } 
+        }
     }
 }

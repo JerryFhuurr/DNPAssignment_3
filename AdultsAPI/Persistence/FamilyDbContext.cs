@@ -12,7 +12,6 @@ namespace AdultsAPI.Persistence
             optionsBuilder.UseSqlite("Data Source = Adult.db");
         }
 
-
     }
 
 }

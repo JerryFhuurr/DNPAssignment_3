@@ -57,10 +57,10 @@ namespace AdultsAPI.Data
                     Console.WriteLine(ad.FirstName);
                 }
             }
-            
+
             Adult toUpdate = adults.FirstOrDefault(t => t.Id == adult.Id);
             if (toUpdate == null) throw new Exception($"Did not find adult with id: {adult.Id}");
-            
+
             toUpdate.FirstName = adult.FirstName;
             toUpdate.LastName = adult.LastName;
             toUpdate.Job.JobTitle = adult.Job.JobTitle;
@@ -71,7 +71,7 @@ namespace AdultsAPI.Data
             toUpdate.Weight = adult.Weight;
             toUpdate.Height = adult.Height;
             toUpdate.Sex = adult.Sex;
-            
+
             foreach (var ad in adults)
             {
                 if (ad.Id == adult.Id)
@@ -80,7 +80,7 @@ namespace AdultsAPI.Data
                     ad.FirstName = adult.FirstName;
                 }
             }
-            
+
             WriteAdultsToFile();
             return toUpdate;
         }

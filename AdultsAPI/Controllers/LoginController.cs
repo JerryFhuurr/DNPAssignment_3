@@ -18,8 +18,8 @@ namespace AdultsAPI.Controllers
         {
             this.userService = userService;
         }
-        
-        [Route("/Login/UserLogin")]  
+
+        [Route("/Login/UserLogin")]
         [HttpPost]
         public async Task<ActionResult<User>> Login([FromBody] User user)
         {
@@ -31,7 +31,7 @@ namespace AdultsAPI.Controllers
             try
             {
                 var validatedUser = await userService.ValidateUser(user.UserName, user.Password);
-                
+
                 return Ok(validatedUser);
             }
             catch (Exception e)
@@ -40,6 +40,6 @@ namespace AdultsAPI.Controllers
                 Console.WriteLine(e.Message);
                 return StatusCode(500, e.Message);
             }
-        }  
+        }
     }
 }

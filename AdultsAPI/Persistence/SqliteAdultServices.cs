@@ -56,7 +56,6 @@ namespace AdultsAPI.Persistence
             try
             {
                 Adult adultUpdate = await context.Adults.Include(a => a.Job).FirstOrDefaultAsync(a => a.Id == adult.Id);
-                adultUpdate.Id = adult.Id;
                 adultUpdate.FirstName = adult.FirstName;
                 adultUpdate.LastName = adult.LastName;
                 adultUpdate.HairColor = adult.HairColor;

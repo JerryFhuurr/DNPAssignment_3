@@ -50,7 +50,7 @@ namespace AdultsAPI.Controllers
                 return StatusCode(500, e.Message);
             }
         }
-        
+
         [HttpPost]
         public async Task<ActionResult<Adult>> AddAdult([FromBody] Adult adult)
         {
@@ -70,7 +70,7 @@ namespace AdultsAPI.Controllers
                 return StatusCode(500, e.Message);
             }
         }
-        
+
         [HttpPatch]
         [Route("{id:int}")]
         public async Task<ActionResult<Adult>> UpdateAdult([FromBody] Adult adult)
@@ -86,8 +86,8 @@ namespace AdultsAPI.Controllers
                 return StatusCode(500, e.Message);
             }
         }
-        
-        
-        
+
+
+
     }
 }

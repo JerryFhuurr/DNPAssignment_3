@@ -10,7 +10,6 @@ namespace AdultsAPI.Data
         Task<Adult> AddAdultAsync(Adult adult);
         Task RemoveAdultAsync(int adultId);
         Task<Adult> UpdateAsync(Adult adult);
-
         Task<Job> GetJob(int id);
     }
 }
